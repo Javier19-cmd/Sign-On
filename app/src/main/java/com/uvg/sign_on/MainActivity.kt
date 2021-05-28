@@ -14,6 +14,7 @@ import com.google.firebase.ktx.Firebase
 
 //gradle signingReport
 //Firebase vinculado a sebasvalle17@gmail.com
+//Tirar el mapa cuando ya inicie la sesión.
 class MainActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     private lateinit var googleSignInClient: GoogleSignInClient

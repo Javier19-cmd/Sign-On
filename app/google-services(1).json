@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "423863038166",
+    "project_id": "sign-on-eba99",
+    "storage_bucket": "sign-on-eba99.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423863038166:android:955b523a5aaf56ea759977",
+        "android_client_info": {
+          "package_name": "com.uvg.sign_on"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "423863038166-1d49supjugjcpd6r43jtm8cni3o7hvq8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uvg.sign_on",
+            "certificate_hash": "2d97d10311ffbd9bc64b0431553a9f4adee83642"
+          }
+        },
+        {
+          "client_id": "423863038166-1etl96einnv1cl2t828ak9fped8d63j9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-2gmh0sXl_XI-62l9wAE3cqtf0bvz9Rs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "423863038166-1etl96einnv1cl2t828ak9fped8d63j9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

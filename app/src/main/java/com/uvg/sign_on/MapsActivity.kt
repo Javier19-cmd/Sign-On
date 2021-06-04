@@ -30,6 +30,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     private val LOCATION_PERMISSION_REQUEST = 1
 
+    //Trayendo la ubicación exacta del teléfono.
     private fun getLocationAccess() {
         if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             mMap.isMyLocationEnabled = true
@@ -38,7 +39,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.ACCESS_FINE_LOCATION), LOCATION_PERMISSION_REQUEST)
     }
 
-
+    //Haciendo request para poder obtener la ubiación del teléfono.
     override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
 
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)

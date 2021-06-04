@@ -1,3 +1,9 @@
+/*
+* Nombre: Javier Sebastián Valle Balsells
+* Carnet: 20159
+* Sección: 10
+* Clase MainActiyity: Esta clase será la encargada de hacer el sign-on y luego de llamar a la clase de MapsActivity para poder ubicar al dispositivo.
+* */
 package com.uvg.sign_on
 import android.content.Intent
 import android.os.Bundle
@@ -54,12 +60,6 @@ class MainActivity : AppCompatActivity() {
                 val account = task.getResult(ApiException::class.java)!!
                 Log.d(TAG, "firebaseAuthWithGoogle:" + account.id)
                 firebaseAuthWithGoogle(account.idToken!!)
-                 //Agregar otro activity (Usar intents.)
-
-
-                //Jalando el mapa
-
-                //llamando()
 
                  //Tirar el mapa con la ubicación de la persona.
             } catch (e: ApiException) {
@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
                 Log.w(TAG, "Google sign in failed", e)
             }
 
-
+            //Llamando a la MapsActivity.
             val intent=Intent(this,MapsActivity::class.java)
             //intent.putExtra("Value","Logged in!")
             startActivity(intent)

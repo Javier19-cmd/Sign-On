@@ -1,3 +1,9 @@
+/*
+* Nombre: Javier Sebastián Valle Balsells
+* Carnet: 20159
+* Sección: 10
+* Clase MapsActivity: Esta sirve para poder ubicar al dispositivo que está loggeando con Google.
+* */
 package com.uvg.sign_on
 
 import android.Manifest

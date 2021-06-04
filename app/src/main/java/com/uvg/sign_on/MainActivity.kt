@@ -56,21 +56,21 @@ class MainActivity : AppCompatActivity() {
                 firebaseAuthWithGoogle(account.idToken!!)
                  //Agregar otro activity (Usar intents.)
 
-                //Jalando el mapa
-                val intent: Intent = Intent(this, MapsActivity::class.java)
-                intent.putExtra("valor","Resultado")
-                intent.putExtra("valor2", "Sumar")
-                //intent.putExtra("valor3", "jaja")
-                startActivity(intent)
-                //finish()
 
-                startActivityForResult(intent, 1)
+                //Jalando el mapa
+
+                //llamando()
 
                  //Tirar el mapa con la ubicación de la persona.
             } catch (e: ApiException) {
                 // Google Sign In failed, update UI appropriately
                 Log.w(TAG, "Google sign in failed", e)
             }
+
+
+            val intent=Intent(this,MapsActivity::class.java)
+            //intent.putExtra("Value","Logged in!")
+            startActivity(intent)
         }
     }
 
@@ -90,5 +90,6 @@ class MainActivity : AppCompatActivity() {
                 }
             }
     }
+
 }
 
